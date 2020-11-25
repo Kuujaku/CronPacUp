@@ -5,8 +5,7 @@ Script will create a folder that it uses to store the backups.
 It will create a native package and foreign package list.
 It will also create a backup of pacman's database.
 
-############################
-Running it
+#Running it#
 
 Linux:
 
