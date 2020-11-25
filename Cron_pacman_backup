@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+echo "Making folder for backup"
+mkdir cronbackup
+echo "Creating pacman package list"
+$(pacman -Qn > cronbackup/nativepkg_list.txt) # creates a list of all native packages
+$(pacman -Qm > cronbackup/foreignpkg_list.txt) # creates a list of all foreign packages
+echo "Done"
+echo "Creating pacman database backup"
+$(tar -cjf cronbackup/pacman_database_backup.tar.bz2 /var/lib/pacman/local)
+echo "Done"
