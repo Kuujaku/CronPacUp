@@ -10,7 +10,7 @@ It will also create a backup of pacman's database.
 Linux:
 
 - First you need to make it an executable:
-chmod +x Cron_pacman_backup
+chmod +x CronPacUp
 
 - Then you can run it as:
-./Cron_pacman_backup
+./CronPacUp
