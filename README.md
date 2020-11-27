@@ -7,7 +7,6 @@ It will also create a backup of pacman's database.
 
 #Running it#
 
-Linux:
 
 - First you need to make it an executable:
 chmod +x CronPacUp
